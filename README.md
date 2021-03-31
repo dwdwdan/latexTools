@@ -1,10 +1,10 @@
-#README
+# README
 
 This package is essentially my standard preamble wrapped in a package form.
 
 This document will also form the documentation.
 
-##Included Packages
+## Included Packages
 This package imports a lot of other packages, namely 
 - amsmath
 - amssymb
@@ -21,30 +21,30 @@ This package imports a lot of other packages, namely
 - bm
 - nicefrac
 
-##amsthm environments
+## amsthm environments
 These are used 
 ````tex
 \begin{theorem}
 	...BLOCK...
 \end{theorem}
 ````
-###Numbered
+### Numbered
 Each of these is numbered with the same counter, at the subsection level
 - theorem
 - lemma
 - proposition
 - definition
 
-###Unnumbered
+### Unnumbered
 The following are not numbered
 - solution
 - claim
 - theorem*
 
-##Blackboard Bold
+## Blackboard Bold
 Many letters have blackboard bold variants invoked by `\IN` for blackboard bold N.
 
-##Math Operators
+## Math Operators
 Various Math Operators are also defined:
 - arcsec
 - arccsc
@@ -56,7 +56,7 @@ Various Math Operators are also defined:
 - poi
 - geo
 
-##Some Renamings
+## Some Renamings
 Some commands have also been renamed.
 - `\tendsto` gives a long right arrow, used for limits
 - `\swap` gives an arrow with arrowheads on both left and right, used for ERO's
@@ -67,10 +67,10 @@ Some commands have also been renamed.
 - `\product` and `cross` both give the x symbol for multiplication
 - `\composed` gives a small circ, used for function composition
 
-##Greek symbol changes
+## Greek symbol changes
 - `\epsilon` has been remapped to output `\varepsilon`
 
-##Macros
+## Macros
 Various macros have also been added
 
 - `\comp{A}` is used to write A complement
