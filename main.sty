@@ -1,0 +1,101 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{customMacros}[2021/03/31]
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{amsthm}
+\RequirePackage{subfiles}
+\RequirePackage{tabu}
+\RequirePackage{xcolor}
+\RequirePackage{soul}
+\RequirePackage{mathtools}
+\RequirePackage{graphicx}
+\RequirePackage[hidelinks]{hyperref}
+\RequirePackage{cleveref}
+\RequirePackage{cancel}
+\RequirePackage{bm}
+\RequirePackage{nicefrac}
+
+
+%Visuals
+\setlength{\parskip}{8pt}
+\renewcommand*{\arraystretch}{1.4}
+\setlength{\parindent}{0pt}
+
+
+%Defining environments
+\theoremstyle{plain}
+\newtheorem*{proposition}{Proposition}
+\newtheorem*{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem*{theorem*}{Theorem}
+
+\theoremstyle{definition}
+\newtheorem*{solution}{Solution}
+\newtheorem*{claim}{Claim}
+\newtheorem{example}[theorem]{Example}
+\newtheorem*{example*}{Example}
+\newtheorem*{examples*}{Examples}
+\newtheorem{definition}[theorem]{Definition}
+\providecommand*\definitionautorefname{Definition}
+
+%defining easier commands
+%sets
+\newcommand{\IN}{\mathbb{N}}
+\newcommand{\IR}{\mathbb{R}}
+\newcommand{\IQ}{\mathbb{Q}}
+\newcommand{\IZ}{\mathbb{Z}}
+\newcommand{\IC}{\mathbb{C}}
+\newcommand{\IP}{\mathbb{P}}
+\newcommand{\IF}{\mathbb{F}}
+
+%Maths Operators
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccsc}{arccsc}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\hcf}{hcf}
+\DeclareMathOperator{\proj}{proj}
+\DeclareMathOperator{\re}{Re}
+\DeclareMathOperator{\bin}{Bin}
+\DeclareMathOperator{\poi}{Poi}
+\DeclareMathOperator{\geo}{Geo}
+
+%logic
+\newcommand{\tendsto}{\longrightarrow}
+\newcommand{\swap}{\leftrightarrow}
+\renewcommand{\implies}{\Rightarrow}
+\renewcommand{\iff}{\Leftrightarrow}
+\newcommand{\notfac}{\nmid}
+\newcommand{\union}{\cup}
+\newcommand{\intersect}{\cap}
+\newcommand{\product}{\times}
+\newcommand{\comp}[1]{{#1}^\mathsf{c}}
+\newcommand{\cross}{\times}
+\newcommand{\restrictedto}[1]{|_{#1}}
+\newcommand{\composed}{\circ}
+
+%variables
+\renewcommand{\epsilon}{\varepsilon}
+
+%macros
+%General Function
+\newcommand{\func}[3]{#1:#2 \to #3}
+%Real Valued Function of a Real Variable
+\newcommand{\rfunc}[1]{#1:A \to \IR \text{, where }A \subseteq \IR}
+%defined by, for use after function declaration
+\newcommand{\defby}[3]{\text{, defined by }#1(#2) \coloneqq #3}
+%inline lim with crit under
+\newcommand{\ulim}[1]{\lim\limits_{#1}}
+%congruence
+\newcommand{\congr}[2]{\equiv#1\mod{#2}}
+%derivative
+\newcommand{\dif}[2]{\frac{d #1}{d #2}}
+%sum
+\newcommand{\suminfty}{\sum_{n=1}^\infty}
+
+
+\newcommand{\defemph}[1]{\textit{#1}}
+\newcommand{\expl}[1]{\textit{(#1)}}
+\renewcommand{\st}{\text{ such that }}
+
+\newcommand{\aref}[1]{\cref{#1} (\nameref{#1})}
+\newcommand{\qref}[1]{(\ref{#1})}
