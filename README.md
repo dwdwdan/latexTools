@@ -81,3 +81,5 @@ Various macros have also been added
 - `\dif{y}{x}` is used to write dy/dx in a fraction
 - `\suminfty` gives a sum from n=1 to infinity
 
+## Other Adjustments made
+It also changes `\parskip` to 8pt, slightly stretches arrays by a factor of 1.4, and remove paragraph indents.
