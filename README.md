@@ -5,7 +5,7 @@ This package is essentially my standard preamble wrapped in a package form.
 This document will also form the documentation.
 
 ## Included Packages
-This package imports a lot of other packages, namely 
+This package imports a lot of other packages, namely
 - amsmath
 - amssymb
 - amsthm
@@ -22,7 +22,7 @@ This package imports a lot of other packages, namely
 - nicefrac
 
 ## amsthm environments
-These are used 
+These are used
 ````tex
 \begin{theorem}
 	...BLOCK...
@@ -39,7 +39,7 @@ Each of these is numbered with the same counter, at the subsection level
 The following are not numbered
 - solution
 - claim
-- theorem*
+- theorem\*
 
 ## Blackboard Bold
 Many letters have blackboard bold variants invoked by `\IN` for blackboard bold N.
@@ -64,7 +64,7 @@ Some commands have also been renamed.
 - `\iff` gives the standard if and only if symbol
 - `\union` gives the cup symbol
 - `\intersect` gives the cap symbol
-- `\product` and `cross` both give the x symbol for multiplication
+- `\product` and `\cross` both give the x symbol for multiplication
 - `\composed` gives a small circ, used for function composition
 
 ## Greek symbol changes
