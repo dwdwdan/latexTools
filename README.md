@@ -23,23 +23,18 @@ This package imports a lot of other packages, namely
 
 ## amsthm environments
 These are used
-````tex
+```tex
 \begin{theorem}
 	...BLOCK...
 \end{theorem}
-````
-### Numbered
-Each of these is numbered with the same counter, at the subsection level
-- theorem
-- lemma
-- proposition
-- definition
-
-### Unnumbered
-The following are not numbered
-- solution
-- claim
-- theorem\*
+```
+Each of these have both numbered and unnumbered variants. The unnumbered variants are used by adding an `*`
+ - proposition
+ - lemma
+ - theorem
+ - solution
+ - claim
+ - definition
 
 ## Blackboard Bold
 Many letters have blackboard bold variants invoked by `\IN` for blackboard bold N.

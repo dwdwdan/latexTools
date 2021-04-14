@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{customMacros}[2021/03/31]
+\ProvidesPackage{latexTools}[2021/03/31]
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
 \RequirePackage{amsthm}
@@ -25,14 +25,19 @@
 %Defining environments
 \theoremstyle{plain}
 \newtheorem{proposition}{Proposition}
+\newtheorem*{proposition*}{Proposition}
 \newtheorem{lemma}{Lemma}
+\newtheorem*{lemma*}{Lemma}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem*{theorem*}{Theorem}
 
 \theoremstyle{definition}
-\newtheorem*{solution}{Solution}
-\newtheorem*{claim}{Claim}
+\newtheorem{solution}{Solution}
+\newtheorem*{solution*}{Solution}
+\newtheorem{claim}{Claim}
+\newtheorem*{claim*}{Claim}
 \newtheorem{definition}[theorem]{Definition}
+\newtheorem*{definition*}[theorem]{Definition}
 \providecommand*\definitionautorefname{Definition}
 
 %defining easier commands
