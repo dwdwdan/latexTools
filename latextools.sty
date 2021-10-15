@@ -42,6 +42,16 @@
 \newtheorem*{definition*}{Definition}
 \providecommand*\definitionautorefname{Definition}
 
+% General Environments
+\newenvironment{nalign}{
+  \begin{equation}
+    \begin{aligned}
+    }{
+    \end{aligned}
+  \end{equation}
+  \ignorespacesafterend
+}
+
 %defining easier commands
 %sets
 \newcommand{\IN}{\mathbb{N}}
