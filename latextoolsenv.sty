@@ -1,0 +1,13 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{latextoolsenv}[2022/05/21]
+\RequirePackage{amsmath}
+
+% General Environments
+\newenvironment{nalign}{
+  \begin{equation}
+    \begin{aligned}
+    }{
+    \end{aligned}
+  \end{equation}
+  \ignorespacesafterend
+}

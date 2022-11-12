@@ -1,0 +1,24 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{latextoolsthm}[2022/05/21]
+
+\RequirePackage{amsthm}
+
+%Defining environments
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem*{theorem*}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem*{proposition*}{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem*{corollary*}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{solution}{Solution}
+\newtheorem*{solution*}{Solution}
+\newtheorem{claim}{Claim}
+\newtheorem*{claim*}{Claim}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem*{definition*}{Definition}
+\providecommand*\definitionautorefname{Definition}

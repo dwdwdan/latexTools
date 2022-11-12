@@ -1,0 +1,65 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{latextoolscommands}[2022/05/21]
+\RequirePackage{amssymb}
+
+%defining easier commands
+%sets
+\newcommand{\IN}{\mathbb{N}}
+\newcommand{\IR}{\mathbb{R}}
+\newcommand{\IQ}{\mathbb{Q}}
+\newcommand{\IZ}{\mathbb{Z}}
+\newcommand{\IC}{\mathbb{C}}
+\newcommand{\IP}{\mathbb{P}}
+\newcommand{\IE}{\mathbb{E}}
+\newcommand{\IF}{\mathbb{F}}
+
+%Maths Operators
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccsc}{arccsc}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\hcf}{hcf}
+\DeclareMathOperator{\proj}{proj}
+\DeclareMathOperator{\re}{Re}
+\DeclareMathOperator{\im}{Im}
+\DeclareMathOperator{\bin}{Bin}
+\DeclareMathOperator{\ber}{Ber}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\cov}{cov}
+\DeclareMathOperator{\poi}{Poi}
+\DeclareMathOperator{\geo}{Geo}
+\DeclareMathOperator{\col}{col}
+\DeclareMathOperator{\row}{row}
+\DeclareMathOperator{\Span}{span}
+\DeclareMathOperator{\rech}{Rech}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\Res}{Res}
+\DeclareMathOperator{\Int}{Int}
+\DeclareMathOperator{\Bias}{Bias}
+
+%logic
+\newcommand{\tendsto}{\longrightarrow}
+\newcommand{\swap}{\leftrightarrow}
+\renewcommand{\implies}{\Rightarrow}
+\renewcommand{\iff}{\Leftrightarrow}
+\newcommand{\union}{\cup}
+\newcommand{\intersect}{\cap}
+\newcommand{\product}{\times}
+\newcommand{\cross}{\times}
+\newcommand{\composed}{\circ}
+
+%variables
+\renewcommand{\epsilon}{\varepsilon}
+
+%macros
+\newcommand{\comp}[1]{{#1}^\mathsf{c}}
+\newcommand{\restrictedto}[1]{|_{#1}}
+%General Function
+\newcommand{\func}[3]{#1:#2 \to #3}
+%Real Valued Function of a Real Variable
+\newcommand{\rfunc}[1]{#1:A \to \IR \text{, where }A \subseteq \IR}
+%congruence
+\newcommand{\congr}[2]{\equiv#1\mod{#2}}
+%derivative
+\newcommand{\dif}[2]{\frac{d #1}{d #2}}
+%sum
+\newcommand{\suminfty}{\sum_{n=1}^\infty}
