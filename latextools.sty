@@ -1,5 +1,13 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{latexTools}[2021/03/31]
+\ProvidesPackage{latexTools}[2022/05/21]
+
+\newif\ifbeamer
+\beamerfalse
+
+\DeclareOption{beamer}{\beamertrue}
+\ExecuteOptions{}
+\ProcessOptions*
+
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
 \RequirePackage{amsthm}
@@ -9,7 +17,9 @@
 \RequirePackage{soul}
 \RequirePackage{mathtools}
 \RequirePackage{graphicx}
-\RequirePackage[hidelinks]{hyperref}
+\ifbeamer\else
+        \RequirePackage[hidelinks]{hyperref}
+\fi
 \RequirePackage{cancel}
 \RequirePackage{bm}
 \RequirePackage{nicefrac}
@@ -20,6 +30,8 @@
 \renewcommand*{\arraystretch}{1.4}
 \setlength{\parindent}{0pt}
 
-\RequirePackage{latextoolsthm}
 \RequirePackage{latextoolscommands}
 \RequirePackage{latextoolsenv}
+\ifbeamer\else
+\RequirePackage{latextoolsthm}
+\fi
